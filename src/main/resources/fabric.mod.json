@@ -1,45 +1,42 @@
 {
   "schemaVersion": 1,
-  "id": "immediatelyfast",
-  "version": "1.2.11+1.21",
-  "name": "ImmediatelyFast",
-  "description": "Speed up and optimize immediate mode rendering in Minecraft",
+  "id": "betterf3",
+  "version": "11.0.1",
+  "name": "BetterF3",
+  "description": "Replaces Minecraft's original debug HUD with a highly customizable, more human-readable HUD.",
+  "icon": "icon.png",
   "authors": [
-    "RK_01"
+    "cominixo",
+    "TreyRuffy"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/immediatelyfast",
-    "sources": "https://github.com/RaphiMC/ImmediatelyFast",
-    "issues": "https://github.com/RaphiMC/ImmediatelyFast/issues"
+    "homepage": "https://modrinth.com/mod/betterf3",
+    "sources": "https://github.com/TreyRuffy/BetterF3.git",
+    "issues": "https://github.com/TreyRuffy/BetterF3/issues/"
   },
-  "license": "LGPL-3.0",
-  "icon": "assets/immediatelyfast/icon.png",
-  "environment": "*",
+  "license": "MIT",
+  "environment": "client",
   "entrypoints": {
     "main": [
-      "dev.lvstrng.argon.Main"
+      "skid.krypton.Main"
     ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": ">=1.21"
+  },
+  "recommends": {
+    "modmenu": ">=10.0.0"
   },
   "mixins": [
     "client.mixins.json"
   ],
-  "depends": {
-    "fabricloader": ">=${loader_version}",
-    "fabric": "*",
-    "minecraft": "~1.21"
-  },
-  "recommends": {
-    "sodium": "*"
-  },
-  "conflicts": {
-    "slight-gui-modifications": "*",
-    "vulkanmod": "*"
-  },
-  "custom": {
-    "modmenu": {
-      "links": {
-        "modmenu.discord": "https://discord.gg/dCzT9XHEWu"
-      }
+  "jars": [
+    {
+      "file": "META-INF/jars/cloth-config-fabric-15.0.127-fabric.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-resource-loader-v0-1.1.3+b559734490.jar"
     }
-  }
+  ]
 }

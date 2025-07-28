@@ -1,38 +1,42 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "dev.lvstrng.argon.mixin",
+  "package": "skid.krypton.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "ClientConnectionMixin",
-    "EndCrystalItemMixin",
-    "ItemStackMixin",
-    "LivingEntityAccessor",
-    "WorldAccessor"
+    "EntityMixin",
+    "PlayerEntityMixin"
   ],
   "client": [
-    "BufferRendererAccessor",
     "CameraMixin",
     "ClientPlayerEntityMixin",
     "ClientPlayerInteractionManagerAccessor",
     "ClientPlayerInteractionManagerMixin",
     "FrustumAccessor",
     "GameRendererMixin",
-    "HandledScreenMixin",
     "InGameHudMixin",
     "KeyBindingAccessor",
     "KeyBindingMixin",
     "KeyboardMixin",
     "MinecraftClientAccessor",
     "MinecraftClientMixin",
-    "MouseHandlerAccessor",
-    "MouseMixin",
-    "OtherClientPlayerEntityAccessor",
     "ScreenMixin",
-    "ShaderProgramAccessor",
-    "WorldRendererAccessor"
+    "EntityRenderDispatcherMixin",
+    "CountPlacementModifierAccessor",
+    "HeightRangePlacementModifierAccessor",
+    "RarityFilterPlacementModifierAccessor",
+    "HeightContextMixin",
+    "ClientPlayNetworkHandlerMixin",
+    "WorldChunkMixin",
+    "HandledScreenMixin",
+    "MobSpawnerLogicAccessor",
+    "MouseMixin",
+    "ChunkOcclusionDataBuilderMixin",
+    "TextVisitFactoryMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-  }
+  },
+  "refmap": "krypton-refmap.json"
 }
